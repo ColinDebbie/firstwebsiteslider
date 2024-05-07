@@ -1,1 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://cdn.tailwindcss.com"></script>
+    <title>Scrolling Effect</title>
+    <style>
+      body{
+        transform: translateX();
+      }
+    </style>
+</head>
+<body class="w-[100%] h-screen bg-gray-800 flex items-center justify-center overflow-y-hidden">
+  <div>
+    <div class="bg-[#f1b434] w-full h-screen flex items-center justify-evenly overflow-x-hidden">
+      <div class="marquee-box flex items-center justify-evenly gap-5 ml-0">
+        <img class="w-[300px] h-[300px] sepia" src="https://artificial-garage.com/media/site/bfd7a024b2-1711798170/lamborghini-murcielago-roadster-2001-front-dooropen-720x720-crop-q72.jpg" alt="">
+      <img class="w-[300px] h-[300px] sepia" src="https://artificial-garage.com/media/site/4e9b5a5087-1711798620/4-3lamborghini-countach-lp5000-1-720x720-crop-q72.jpg" alt="">
+      <img class="w-[300px] h-[300px] sepia" src="https://artificial-garage.com/media/site/bfd7a024b2-1711798170/lamborghini-murcielago-roadster-2001-front-dooropen-720x720-crop-q72.jpg" alt="">
+      <img class="w-[300px] h-[300px] sepia" src="https://artificial-garage.com/media/site/4d9cedbeb4-1711798178/rolls-royce-phantom-lp5000-4-720x720-crop-q72.jpg" alt="">
+      <img class="w-[300px] h-[300px] sepia" src="https://artificial-garage.com/media/site/b15978977f-1711798666/full-width-720x720-crop-q72.jpg" alt="">
+      <img class="w-[300px] h-[300px] sepia" src="https://artificial-garage.com/media/site/2d9eb925f7-1711798352/rolls-royce-phantom-lp5000-22-720x720-crop-q72.jpg" alt="">
+      <img class="w-[300px] h-[300px] sepia" src="https://artificial-garage.com/media/site/aa431f1097-1711798348/rolls-royce-phantom-lp5000-8-720x720-crop-q72.jpg" alt="">
+        <img class="w-[300px] h-[300px] sepia" src="https://artificial-garage.com/media/site/bfd7a024b2-1711798170/lamborghini-murcielago-roadster-2001-front-dooropen-720x720-crop-q72.jpg" alt="">
+      <img class="w-[300px] h-[300px] sepia" src="https://artificial-garage.com/media/site/4e9b5a5087-1711798620/4-3lamborghini-countach-lp5000-1-720x720-crop-q72.jpg" alt="">
+      <img class="w-[300px] h-[300px] sepia" src="https://artificial-garage.com/media/site/bfd7a024b2-1711798170/lamborghini-murcielago-roadster-2001-front-dooropen-720x720-crop-q72.jpg" alt="">
+      <img class="w-[300px] h-[300px] sepia" src="https://artificial-garage.com/media/site/4d9cedbeb4-1711798178/rolls-royce-phantom-lp5000-4-720x720-crop-q72.jpg" alt="">
+      <img class="w-[300px] h-[300px] sepia" src="https://artificial-garage.com/media/site/b15978977f-1711798666/full-width-720x720-crop-q72.jpg" alt="">
+      <img class="w-[300px] h-[300px] sepia" src="https://artificial-garage.com/media/site/2d9eb925f7-1711798352/rolls-royce-phantom-lp5000-22-720x720-crop-q72.jpg" alt="">
+      <img class="w-[300px] h-[300px] sepia" src="https://artificial-garage.com/media/site/aa431f1097-1711798348/rolls-royce-phantom-lp5000-8-720x720-crop-q72.jpg" alt="">
+      </div>
+    </div>
+    <div class="absolute z-20 w-full h-screen bg-transparent flex items-center justify-center top-0 left-0">
+      <h1 class="text-center text-9xl font-semibold text-[#f1b534e6]">Drive Your dream</h1>
+    </div>
+  </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      gsap.from('.marquee-box',{
+        transform: "translateX(-180%)",
+        duration:18,
+        repeat:-2,
+        ease:"none"
+      })
+    </script>
+</body>
+</html>
